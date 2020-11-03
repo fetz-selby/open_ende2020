@@ -1,0 +1,34 @@
+{
+  "name": "ende2020",
+  "version": "1.0.0",
+  "description": "e2020 realtime ende",
+  "main": "app.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "node app.js",
+    "prod": "forever start app.js",
+    "stop": "forever stopall",
+    "build": "webpack"
+  },
+  "author": "selby",
+  "license": "ISC",
+  "dependencies": {
+    "@feathersjs/express": "^4.5.6",
+    "@feathersjs/feathers": "^4.5.5",
+    "@feathersjs/socketio": "^4.5.6",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.3",
+    "tedious": "^8.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "forever": "^3.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
